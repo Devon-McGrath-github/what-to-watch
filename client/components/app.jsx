@@ -16,9 +16,13 @@ export default React.createClass({
   },
 
   renderMovies (err, movies) {
+    var item = movies.results[Math.floor(Math.random()*movies.results.length)]
+    var arr = [item]
+    console.log(item, 'item');
+
     this.setState({
       error: err,
-      movies: movies
+      movies: {results: arr}
     })
   },
 
