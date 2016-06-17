@@ -7,7 +7,7 @@ export default React.createClass({
   render() {
     return (
       <div>
-        {this.props.movie.map(function (movie){
+        {this.props.movie.map((movie) => {
           return (
             <div id="movie_info_container">
 
@@ -15,7 +15,7 @@ export default React.createClass({
                 <h2> {movie.title} </h2>
                 <p> {movie.overview}</p>
                 <p> {movie.vote_average}/10</p>
-                <RefreshButton refresh={this.props.refresh}/>
+                <p><a href='#' onClick={() => {this.props.refresh()}}>I DON'T WANT TO WATCH THAT</a></p>
               </div>
 
               <div className="col-sm-3 split">
