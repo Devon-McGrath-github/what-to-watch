@@ -1,0 +1,12 @@
+#main_container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#movie_info_container {
+    width: 500px;
+}
+
+h2 {
+    background-color: red;
+}

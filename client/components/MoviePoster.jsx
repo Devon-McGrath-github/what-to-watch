@@ -6,10 +6,14 @@ export default React.createClass({
         return (
             <div>
                 {this.props.movie.map(function (movie){
-                    return <div>
-                        <p> {movie.title} </p>
-                        <img src={"http://image.tmdb.org/t/p/w500//" + movie.poster_path}></img>
+                    return (
+                    <div id="movie_info_container">
+                        <h2> {movie.title} </h2>
+                        <img class='movie_poster' src={"http://image.tmdb.org/t/p/w500//" + movie.poster_path}></img>
+                        <p> {movie.overview}</p>
+                        <p> {movie.vote_average}/10</p>
                     </div>
+                )
                 })}
             </div>
         )

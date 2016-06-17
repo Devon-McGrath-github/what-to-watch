@@ -8,6 +8,7 @@ export default React.createClass({
                     return <div>
                         <p> {movie.title} </p>
                         <img src={movie.poster_path}></img>
+                        <p> {movie.overview}</p>
                     </div>
                 })}
             </div>
