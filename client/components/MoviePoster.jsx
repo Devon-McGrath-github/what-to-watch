@@ -1,6 +1,4 @@
 import React from 'react'
-import MovieItemInfo from './MovieItemInfo'
-import RefreshButton from './RefreshButton'
 
 export default React.createClass({
 
@@ -12,10 +10,10 @@ export default React.createClass({
             <div id="movie_info_container">
 
               <div className="col-sm-3 split">
-                <h2> {movie.title} </h2>
-                <p> {movie.overview}</p>
-                <p> {movie.vote_average}/10</p>
-                <p><a href='#' onClick={() => {this.props.refresh()}}>I DON'T WANT TO WATCH THAT</a></p>
+                <h2>{movie.title} </h2>
+                <p>{movie.overview}</p>
+                <p>Rating: {movie.vote_average}/10</p>
+                <p><a href='#' className="button" onClick={() => {this.props.refresh()}}>I DON'T WANT TO WATCH THAT</a></p>
               </div>
 
               <div className="col-sm-3 split">

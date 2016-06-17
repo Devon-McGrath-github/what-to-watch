@@ -3,7 +3,6 @@ import React from 'react'
 import api from '../api'
 import MoviePoster from './MoviePoster'
 import Header from './Header'
-import RefreshButton from './RefreshButton'
 
 export default React.createClass({
   getInitialState () {
