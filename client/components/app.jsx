@@ -26,14 +26,17 @@ export default React.createClass({
     })
   },
 
+  refreshPage () {
+      api.getMovies(this.renderMovies)
+  },
 
   render() {
     console.log(this.state.movies.results, "state here");
     return (
           <div>
-          <h1>hey</h1>
+          <h1>WHAT THE FUCK SHOULD I WATCH?</h1>
           <MoviePoster movie={this.state.movies.results}/>
-
+          <a href='#' onClick={this.refreshPage}>I DON'T WANT TO WATCH THAT SHIT</a>
           </div>
       )
     }
