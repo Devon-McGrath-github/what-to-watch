@@ -9,9 +9,11 @@ export default React.createClass({
     },
 
     change(event){
-      this.setState({
-        value: event.target.value
-      })
+      console.log(event.target.value, "this is the event");
+      this.props.filterGenre(event.target.value)
+      // this.setState({
+      //   value: event.target.value
+      // })
     },
 
     render() {
@@ -23,5 +25,6 @@ export default React.createClass({
           </select>
         )
     }
+
 
 })
